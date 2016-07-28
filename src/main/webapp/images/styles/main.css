@@ -1,0 +1,106 @@
+/* General styles */
+body {
+	margin:0;
+	padding:0;
+	border:0;
+	width:100%;
+	background:#fff;
+	font-size:90%;
+}
+h1, h2, h3, p {
+	padding-left:20px;
+	clear:left;
+}
+h2 {
+	padding-top:30px;
+}
+
+/* style all elements with a required attribute */
+/**
+:required {
+  background: red;
+}
+*/
+
+/* style all input elements with a required attribute */
+input:required {
+  box-shadow: 4px 4px 20px rgba(200, 0, 0, 0.85);
+}
+
+/**
+ * style input elements that have a required
+ * attribute and a focus state
+ */
+input:required:focus {
+  border: 1px solid red;
+  outline: none;
+}
+
+/**
+ * style input elements that have a required
+ * attribute and a hover state
+ */
+input:required:hover {
+  opacity: 1;
+}
+
+/* -------------------------------------------------- */
+/* menu */
+/* -------------------------------------------------- */
+#boxtab-blue {
+	clear:left;
+	float:left;
+	padding:0;
+	background:#fff url(../images/boxtab-blue.gif) bottom repeat-x;
+	width:100%;
+	overflow:hidden;
+	font-family:Verdana, Geneva, sans-serif;
+}
+#boxtab-blue ul {
+	float:left;
+	margin:0;
+	padding:0;
+	list-style:none;
+	position:relative;
+	left:50%;
+	text-align:center;
+}
+#boxtab-blue ul li {
+	display:block;
+	float:left;
+	list-style:none;
+	margin:20px 0 0 0;
+	padding:0;
+	position:relative;
+	right:50%;
+}
+#boxtab-blue ul li a {
+	display:block;
+	float:left;
+	margin:0 1px;
+	padding:5px 10px;
+	background:#fff;
+	text-decoration:none;
+	color:#000;
+	border-top:1px solid #369;
+	border-left:1px solid #369;
+	border-right:1px solid #369;
+	position:relative;
+	bottom:1px;
+}
+#boxtab-blue ul li a:hover {
+	background:#36f;
+	color:#fff;
+}
+#boxtab-blue ul li.active {
+	margin-top:10px;
+}
+#boxtab-blue ul li.active a,
+#boxtab-blue ul li.active a:hover {
+	position:relative;
+	bottom:0;
+	padding:10px;
+	background:#fff;
+	color:#000;
+	font-weight:bold;
+}

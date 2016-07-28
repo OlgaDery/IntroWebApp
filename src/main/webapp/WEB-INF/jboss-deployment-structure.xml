@@ -1,0 +1,15 @@
+<jboss-deployment-structure>
+  <deployment>
+  <dependencies>
+      <module name="javax.api"/>
+      <module name="org.jboss.modules"/>
+      <module name="org.apache.derby"/>
+       <module name="org.jboss.resteasy.resteasy-yaml-provider" services="import"/>
+  </dependencies>
+     <!-- exclude-subsystem prevents a subsystems deployment unit processors running on a deployment -->
+     <!-- which gives basically the same effect as removing the subsystem, but it only affects single deployment -->
+ <!--    <exclude-subsystems>
+        <subsystem name="logging" />
+    </exclude-subsystems>  --> 
+  </deployment>
+</jboss-deployment-structure>
